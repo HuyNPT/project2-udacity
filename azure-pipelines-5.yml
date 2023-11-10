@@ -5,10 +5,10 @@
 
 trigger:
   - main
-  pool:
+pool:
    name: Default
   
-  variables:
+variables:
     # Azure Resource Manager connection created during pipeline creation
     azureServiceConnectionId: '190f9aed-7654-4d11-ad9d-e20483f6a552'
   
@@ -27,7 +27,7 @@ trigger:
     # Python version: 3.7
     pythonVersion: '3.10.12'
   
-  stages:
+stages:
   - stage: Build
     displayName: Build stage
     jobs:
