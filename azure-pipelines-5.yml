@@ -40,7 +40,7 @@ stages:
     - script: |
        curl -LO https://github.com/actions/python-versions/releases/download/3.10.12-5200619051/python-3.10.12-linux-22.04-x64.tar.gz
        tar -xvf python-3.10.12-linux-22.04-x64.tar.gz
-      workingDirectory: $(Agent.ToolsDirectory)/Python/$(pythonVersion)/x64
+      workingDirectory: /home/huynpt/myagent/'sudo .'/svc.sh install/_tool/Python/3.10.12/x64
       displayName: 'Downloaded'
 
     - task: UsePythonVersion@0
