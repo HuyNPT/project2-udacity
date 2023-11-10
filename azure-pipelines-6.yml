@@ -31,11 +31,6 @@ stages:
   jobs:
   - job: BuildJob
     steps:
-    - task: UsePythonVersion@0
-      inputs:
-        versionSpec: '$(pythonVersion)'
-        addToPath: true
-      displayName: 'Use Python $(pythonVersion)'
 
     - script: |
         python -m venv antenv
